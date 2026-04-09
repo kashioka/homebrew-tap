@@ -9,6 +9,11 @@ cask "rendu" do
 
   depends_on arch: :arm64
 
+  preflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{staged_path}/Rendu.app"]
+  end
+
   app "Rendu.app"
 
   zap trash: [
