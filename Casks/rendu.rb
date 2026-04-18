@@ -1,6 +1,6 @@
 cask "rendu" do
-  version "0.5.0"
-  sha256 "473f78b4de302a9c716b018714fed7fba9e54f856215e7554ae3ff38d314e70a"
+  version "0.5.1"
+  sha256 "0e9218ba9d789f774618ad371db168e4e233200230bac4b9914a718e13ad0a22"
 
   url "https://github.com/kashioka/Rendu/releases/download/v#{version}/Rendu_#{version}_aarch64.dmg"
   name "Rendu"
@@ -15,6 +15,7 @@ cask "rendu" do
   end
 
   app "Rendu.app"
+  binary "#{appdir}/Rendu.app/Contents/Resources/resources/rendu-cli", target: "rendu"
 
   zap trash: [
     "~/Library/Caches/com.alleyoop.md-viewer",
