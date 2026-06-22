@@ -1,6 +1,6 @@
 cask "rendu" do
-  version "0.8.0"
-  sha256 "0646d5213d83d6b2cf271640139322847c9ec0513c63187f08b6cd5490989109"
+  version "0.9.0"
+  sha256 "056bd0357dcc2190a0b81a63b6448be08dd1667684b0e24cbb3954b586a48958"
 
   url "https://github.com/kashioka/Rendu/releases/download/v#{version}/Rendu_#{version}_aarch64.dmg"
   name "Rendu"
